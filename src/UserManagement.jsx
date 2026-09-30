@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://clouddesk-brcybrctf6grejfq.eastasia-01.azurewebsites.net";
 
 function UserManagement({ onLogout }) {
   const [users, setUsers] = useState([]);

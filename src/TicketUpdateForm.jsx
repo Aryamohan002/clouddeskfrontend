@@ -63,7 +63,7 @@ function TicketUpdateForm({
 
       const response =
         await axios.put(
-          `http://127.0.0.1:8000/tickets/${ticket.id}`,
+          `https://clouddesk-brcybrctf6grejfq.eastasia-01.azurewebsites.net/tickets/${ticket.id}`,
           updateData,
           {
             headers: {
