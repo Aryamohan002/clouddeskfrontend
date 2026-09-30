@@ -7,7 +7,7 @@
   "dev": "vite",
   "build": "vite build",
   "lint": "eslint .",
-  "start": "npm install --omit=dev && npx serve -s dist -l 8080",
+ "start": "npm install serve --no-save && npx serve -s dist -l 8080",
   "preview": "vite preview"
 },
   "dependencies": {
