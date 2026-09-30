@@ -5,7 +5,7 @@ import TicketUpdateForm from "./TicketUpdateForm";
 import UserManagement from "./UserManagement";
 import RoleManagement from "./RoleManagement";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://clouddesk-brcybrctf6grejfq.eastasia-01.azurewebsites.net";
 
 function Dashboard({ onLogout }) {
   const [profile, setProfile] = useState(null);
