@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import axios from "axios";
 import Dashboard from "./Dashboard";
@@ -25,7 +26,7 @@ function App() {
       formData.append("password", password);
 
       const response = await axios.post(
-        "https://clouddesk-brcybrctf6grejfq.eastasia-01.azurewebsites.netlogin",
+        "https://clouddesk-brcybrctf6grejfq.eastasia-01.azurewebsites.net/login",
         formData,
         {
           headers: {
@@ -38,9 +39,7 @@ function App() {
 
       localStorage.setItem("access_token", token);
 
-      // Switch from Login page to Dashboard
       setLoggedIn(true);
-
     } catch (error) {
       console.error(error);
 
@@ -57,10 +56,6 @@ function App() {
     }
   };
 
-  // ---------------------------------------------
-  // If logged in, show Dashboard
-  // ---------------------------------------------
-
   if (loggedIn) {
     return (
       <Dashboard
@@ -68,10 +63,6 @@ function App() {
       />
     );
   }
-
-  // ---------------------------------------------
-  // Otherwise show Login
-  // ---------------------------------------------
 
   return (
     <div className="login-page">
@@ -143,3 +134,4 @@ function App() {
 }
 
 export default App;
+
